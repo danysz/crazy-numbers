@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.dleelk4apps.crazynumbers.ui.game.GameActivity">
+
+    <LinearLayout
+        android:id="@+id/gameTopLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/header_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/level"
+                app:customFont="@string/akaDylan"
+                android:gravity="center"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="#fff"/>
+            <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                app:customFont="@string/akaDylan"
+                android:gravity="center"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+        <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+            android:id="@+id/timeTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="00:00"
+            app:customFont="@string/akaDylan"
+            android:textSize="@dimen/font_size_20"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/points"
+                app:customFont="@string/akaDylan"
+                android:gravity="center"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="#fff"/>
+            <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+                android:id="@+id/pointsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                app:customFont="@string/akaDylan"
+                android:gravity="center"
+                android:textSize="@dimen/font_size_18"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gameCenterLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/refreshView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/refresh"
+            android:layout_marginBottom="20dp"/>
+
+        <GridView
+            android:id="@+id/gameGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/refreshView"
+            android:layout_centerInParent="true"
+            android:background="#fff"
+            android:horizontalSpacing="1dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp"
+            android:animateLayoutChanges="true"
+            >
+
+        </GridView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/board">
+        <LinearLayout
+            android:id="@+id/gameBottomLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

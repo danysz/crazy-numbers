@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.dleelk4apps.crazynumbers.ui.start.SplashActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/back"
+            android:layout_margin="20dp"
+            />
+
+        <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/help"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_size_25"
+            app:customFont="@string/akaDylan"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/temp"
+                android:textColor="#222"
+                android:textSize="@dimen/font_size_18"
+                app:customFont="@string/akaDylan"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

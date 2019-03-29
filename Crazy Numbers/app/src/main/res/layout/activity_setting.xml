@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.dleelk4apps.crazynumbers.ui.setting.SettingActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:padding="20dp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/back"
+
+            />
+
+        <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting"
+            android:textColor="#fff"
+            android:textSize="@dimen/font_size_25"
+            app:customFont="@string/akaDylan"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp">
+
+            <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sounds"
+                android:textSize="@dimen/font_size_18"
+                app:customFont="@string/akaDylan"
+                android:layout_centerVertical="true"/>
+
+            <ToggleButton
+                android:id="@+id/soundToggleButton"
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/toggle_selector"
+                android:checked="true"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginEnd="20dp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:visibility="invisible">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/music"
+                android:textSize="@dimen/font_size_18"
+                app:customFont="@string/akaDylan"
+                android:layout_centerVertical="true"/>
+
+            <ToggleButton
+                android:id="@+id/musicToggleButton"
+                android:layout_width="64dp"
+                android:layout_height="36dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/toggle_selector"
+                android:checked="true"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                android:layout_marginEnd="20dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:visibility="invisible">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/matrix"
+                android:textSize="@dimen/font_size_18"
+                app:customFont="@string/akaDylan" />
+
+            <RadioGroup
+                android:id="@+id/matrixRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <com.app.dleelk4apps.crazynumbers.ui.views.SettingCustomRadioButton
+                    android:id="@+id/mat3SettingCustomRadioButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="8dp"
+                    android:layout_margin="6dp"
+                    android:text="@string/_3"
+                    android:textColor="@drawable/rbtn_textcolor_selector"
+                    android:textSize="@dimen/font_size_20"/>
+
+                <com.app.dleelk4apps.crazynumbers.ui.views.SettingCustomRadioButton
+                    android:id="@+id/mat4SettingCustomRadioButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="8dp"
+                    android:layout_margin="6dp"
+                    android:text="@string/_4"
+                    android:textColor="@drawable/rbtn_textcolor_selector"
+                    android:textSize="@dimen/font_size_20"/>
+
+                <com.app.dleelk4apps.crazynumbers.ui.views.SettingCustomRadioButton
+                    android:id="@+id/mat5SettingCustomRadioButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="8dp"
+                    android:layout_margin="6dp"
+                    android:text="@string/_5"
+                    android:textColor="@drawable/rbtn_textcolor_selector"
+                    android:textSize="@dimen/font_size_20"/>
+
+                <com.app.dleelk4apps.crazynumbers.ui.views.SettingCustomRadioButton
+                    android:id="@+id/mat6SettingCustomRadioButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="8dp"
+                    android:layout_margin="6dp"
+                    android:text="@string/_6"
+                    android:textColor="@drawable/rbtn_textcolor_selector"
+                    android:textSize="@dimen/font_size_20"/>
+
+                <com.app.dleelk4apps.crazynumbers.ui.views.SettingCustomRadioButton
+                    android:id="@+id/mat7SettingCustomRadioButton"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:padding="8dp"
+                    android:layout_margin="6dp"
+                    android:text="@string/_7"
+                    android:textColor="@drawable/rbtn_textcolor_selector"
+                    android:textSize="@dimen/font_size_20"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/difficulty"
+                android:textSize="@dimen/font_size_18"
+                app:customFont="@string/akaDylan" />
+
+            <RadioGroup
+                android:id="@+id/difficultyRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+
+                <com.app.dleelk4apps.crazynumbers.ui.views.SettingCustomRadioButton
+                    android:id="@+id/easySettingCustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:padding="6dp"
+                    android:text="@string/easy"
+                    android:layout_margin="2dp"
+                    android:textColor="@drawable/rbtn_textcolor_selector"
+                    android:textSize="@dimen/font_size_18"
+                    app:isCircle="false"/>
+
+                <com.app.dleelk4apps.crazynumbers.ui.views.SettingCustomRadioButton
+                    android:id="@+id/normalSettingCustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:padding="6dp"
+                    android:text="@string/normal"
+                    android:layout_margin="2dp"
+                    android:textColor="@drawable/rbtn_textcolor_selector"
+                    android:textSize="@dimen/font_size_18"
+                    app:isCircle="false"/>
+
+                <com.app.dleelk4apps.crazynumbers.ui.views.SettingCustomRadioButton
+                    android:id="@+id/mediumSettingCustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:padding="6dp"
+                    android:text="@string/medium"
+                    android:layout_margin="2dp"
+                    android:textColor="@drawable/rbtn_textcolor_selector"
+                    android:textSize="@dimen/font_size_18"
+                    app:isCircle="false"/>
+
+                <com.app.dleelk4apps.crazynumbers.ui.views.SettingCustomRadioButton
+                    android:id="@+id/hardSettingCustomRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:padding="6dp"
+                    android:layout_margin="2dp"
+                    android:text="@string/hard"
+                    android:textColor="@drawable/rbtn_textcolor_selector"
+                    android:textSize="@dimen/font_size_18"
+                    app:isCircle="false"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomStartButtonView
+            android:id="@+id/helpGameCustomStartButtonView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="@string/help"
+            android:visibility="invisible">
+
+        </com.app.dleelk4apps.crazynumbers.ui.views.GameCustomStartButtonView>
+
+    </LinearLayout>
+
+</LinearLayout>

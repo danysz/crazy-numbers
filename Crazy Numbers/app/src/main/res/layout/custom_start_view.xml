@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="20dp">
+
+    <com.app.dleelk4apps.crazynumbers.ui.views.GameCustomTextView
+        android:id="@+id/gameCustomTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="@drawable/radius_corner"
+        android:textColor="#fff"
+        app:customFont="@string/akaDylan"
+        android:padding="12dp"/>
+
+</LinearLayout>

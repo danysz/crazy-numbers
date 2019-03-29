@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.app.dleelk4apps.crazynumbers.ui.views.SquareFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/gameItemCustomTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:customFont="@string/akaDylan"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="16sp"
+        app:autoSizeMaxTextSize="36sp"
+        app:autoSizeStepGranularity="2sp"
+        android:textColor="#ffffff"
+        />
+
+</com.app.dleelk4apps.crazynumbers.ui.views.SquareFrameLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <declare-styleable name="GameCustomTextView">
+        <attr name="customFont" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="GameCustomStartButtonView">
+        <attr name="text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingCustomRadioButton">
+        <attr name="isCircle" format="boolean"/>
+    </declare-styleable>
+
+</resources>
